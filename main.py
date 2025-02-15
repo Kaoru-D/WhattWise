@@ -93,7 +93,7 @@ def chatbot(query: str):
     
     #Si hay resultados, los enviamos, sino, mostramos un mensaje de error
     return JSONResponse(content={
-        "Mensaje": "✅ Aquí tienes algunas preguntas relacionadas:" if results else "⚠️ No encontré preguntas en esa categoría.",
+        "Mensaje": "✅ Aquí tienes algunas preguntas relacionadas:" if results else "⚠️ No te entiendo, puedes preguntarme algo diferente.",
         "Resultados": results
     })
     

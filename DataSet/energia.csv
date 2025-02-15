@@ -1,5 +1,5 @@
 version,name,applied_at
-1, �C�mo puedo reducir el consumo de energ�a en mi hogar?, Puedes reducir el consumo de energ�a apagando luces y dispositivos cuando no los uses
+1, ¿Cómo puedo reducir el consumo de energía en mi hogar?, Puedes reducir el consumo de energ�a apagando luces y dispositivos cuando no los uses
 2, �Qu� tipo de bombillas son m�s eficientes energ�ticamente?, Las bombillas LED son las m�s eficientes energ�ticamente
 3, �C�mo puedo mejorar la eficiencia energ�tica de mi refrigerador?, Mant�n el refrigerador lleno
 4, �Cu�les son las ventajas de usar paneles solares en casa?, Los paneles solares reducen la dependencia de la red el�ctrica
@@ -39,3 +39,4 @@ version,name,applied_at
 39, �Qu� tipo de bombillas son m�s eficientes para ahorrar energ�a?, Bombillas CFL: M�s eficientes que las incandescentes pero menos que las LED.
 40, �Qu� tipo de bombillas son m�s eficientes para ahorrar energ�a?, Bombillas hal�genas eficientes: Consumen menos energ�a que las incandescentes tradicionales aunque no tanto como las LED.
 41, �Qu� me recomiendas?, �Qu� h�bitos diarios pueden ayudarme a ahorrar energ�a
+42, No sé que escribir, �Qu� beneficios tiene usar un termostato programable?
