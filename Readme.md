@@ -1,4 +1,4 @@
-## Equipo 6
+## Equipo 4
 
 Daniel Pulgarin  
 Luisa Fernanda Rios Arias  
