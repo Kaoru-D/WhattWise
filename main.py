@@ -15,14 +15,17 @@ nltk.data.path.append('C:/Users/danys/AppData/Local/Programs/Python/Python312/Li
 nltk.download('punkt') #paquete para dividir el texto en palabras
 nltk.download('wordnet') #paquete para obtener sinonimos de las palabras en inglés
 nltk.download('punkt_tab') #consejo para error interno del servidor error 500
+nltk.download('omw-1.4')  # Mejor paquete para wordnet en varios idiomas
 
 def load_questions():
-    #Leemos el archivo csv que contiene las preguntas y respuestas
-    df=pd.read_csv("../WhattWise/DataSet/energia.csv",  encoding='iso-8859-1')[['version','name','applied_at']]
-    
-    #Renombramos las columnas del dataframe
-    df.columns=["id","pregunta","respuesta"]
-    return df.fillna('').to_dict(orient='records')
+    try:
+        df = pd.read_csv("../WhattWise/DataSet/energia.csv", encoding='iso-8859-1')[['version', 'name', 'applied_at']]
+        df.columns = ["id", "pregunta", "respuesta"]
+        return df.fillna('').to_dict(orient='records')
+    except Exception as e:
+        print(f"\n❌ Error al cargar las preguntas: {e}\n")
+        return []
+
 #Cargamos las preguntas al iniciar la aplicación para no leer el archivo csv en cada solicitud
 pregunta_list=load_questions()
 
@@ -39,7 +42,21 @@ app=FastAPI(title="WattWise: ChatBot de Ahorro Energético", version="0.0.1")
 @app.get("/", tags=["Inicio"])
 def inicio():
     #Cuando entremos en el navegador a http://127.0.0.1:8000 nos mostrara el siguiente mensaje
-    return HTMLResponse(content="<h1>Bienvenido a WattWise</h1>")
+    return HTMLResponse(content="""
+    <html>
+        <head>
+            <title>WattWise</title>
+            <style>
+                body { font-family: Arial, sans-serif; text-align: center; padding: 20px; }
+                h1 { color: #2E86C1; }
+            </style>
+        </head>
+        <body>
+            <h1>⚡ Bienvenido a WattWise ⚡</h1>
+            <p>Tu asistente inteligente para el ahorro energético.</p>
+        </body>
+    </html>
+    """)
 
 #Obteniendo la lista de preguntas
 #Creamos una ruta que nos permita obtener la lista de preguntas y respuestas
@@ -47,13 +64,18 @@ def inicio():
 #Ruta para obtener todas las preguntas
 @app.get("/preguntas", tags=["Preguntas"])
 def preguntas():
-    #Si hay preguntas las enviamos, sino, mostramos un mensaje de error
-    return pregunta_list or HTTPException(status_code=500, detail="No hay preguntas disponibles")
+    if pregunta_list:
+        return pregunta_list
+    raise HTTPException(status_code=500, detail="❌ No hay preguntas disponibles.")#muestra un error en caso de que no haya preguntas
+
 #Ruta para obtener una sola pregunta
 @app.get("/preguntas/{id}", tags=["Preguntas"])
 def pregunta(id:int):
     #Buscamos la pregunta en la lista de preguntas la buscamos por su id
-    return next((p for p in pregunta_list if p['id'] == id), {"Detalle":"Pregunta no encontrada"})
+    pregunta = next((p for p in pregunta_list if p['id'] == id), None)
+    if pregunta:
+        return pregunta
+    raise HTTPException(status_code=404, detail="⚠️ Pregunta no encontrada")
 
 
 #Ruta del chatbot que responde a las preguntas con palabras clave de la categoria
@@ -67,18 +89,22 @@ def chatbot(query: str):
     synonyms = {word for q in query_words for word in get_synonyms(q)} | set(query_words)
     
     #Filtramos la lista de las preguntas buscando coincidencias con las palabras clave
-    results=[p for p in pregunta_list if any(s in p['respuesta'].lower() for s in synonyms)]
+    results=[p for p in pregunta_list if any(s in p['pregunta'].lower() for s in synonyms)]
     
     #Si hay resultados, los enviamos, sino, mostramos un mensaje de error
     return JSONResponse(content={
-        "Respuesta": "Aquí tienes algunas preguntas relacionadas: " if results else "No encontré preguntas en esa categoría.", "Respuesta": results
+        "Mensaje": "✅ Aquí tienes algunas preguntas relacionadas:" if results else "⚠️ No encontré preguntas en esa categoría.",
+        "Resultados": results
     })
     
 # Ruta para buscar respuestas por palabra clave
 @app.get("/preguntas/{keyword}", tags=["Preguntas"])
 def buscar_pregunta(keyword: str):
     # Filtramos la lista de respuestas por palabra clave 
-    return [p for p in pregunta_list if keyword.lower() in p['pregunta'].lower()]
+    resultados = [p for p in pregunta_list if keyword.lower() in p['pregunta'].lower()]
+    if resultados:
+        return resultados
+    raise HTTPException(status_code=404, detail="⚠️ No se encontraron preguntas con esa palabra clave")
     
 """ preguntas =[
     {
