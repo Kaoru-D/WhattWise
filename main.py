@@ -10,6 +10,7 @@ from nltk.tokenize import word_tokenize #Se usa para dividir el texto en palabra
 from nltk.corpus import wordnet #Se usa para obtener sinonimos de las palabras
 from fastapi.templating import Jinja2Templates #Se usa para renderizar templates
 from starlette.requests import Request #Se usa para manejar solicitudes HTTP
+from fastapi.staticfiles import StaticFiles #Se usa para servir archivos estáticos
 
 #Indicamos donde encontrar el archivo csv
 nltk.data.path.append('C:/Users/danys/AppData/Local/Programs/Python/Python312/Lib/site-packages/nltk')
@@ -40,9 +41,9 @@ def get_synonyms(word):
 #Esto inicializa la app con un titulo y una version
 app=FastAPI(title="WattWise: ChatBot de Ahorro Energético", version="0.0.1")
 
-
+app.mount("/templates/dist", StaticFiles(directory="templates/dist"), name="static")
 # Configuramos la carpeta de templates
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="../WhattWise")
 
 # Ruta de inicio que devuelve el archivo HTML
 @app.get("/", tags=["Inicio"])
@@ -98,4 +99,3 @@ def buscar_pregunta(keyword: str):
         return resultados
     raise HTTPException(status_code=404, detail="⚠️ No se encontraron preguntas con esa palabra clave")
     
-
