@@ -12,8 +12,8 @@ from fastapi.templating import Jinja2Templates #Se usa para renderizar templates
 from starlette.requests import Request #Se usa para manejar solicitudes HTTP
 from fastapi.staticfiles import StaticFiles #Se usa para servir archivos estáticos
 
+nltk.download('averaged_perceptron_tagger')# Esta función obliga a que la libreria nltk se descargue en el la carpeta predeterminada
 #Indicamos donde encontrar el archivo csv
-nltk.data.path.append('C:/Users/danys/AppData/Local/Programs/Python/Python312/Lib/site-packages/nltk')
 #descargamos las herramientas necesarias de nltk para procesar textos y analizarlos
 nltk.download('punkt') #paquete para dividir el texto en palabras
 nltk.download('wordnet') #paquete para obtener sinonimos de las palabras en inglés
