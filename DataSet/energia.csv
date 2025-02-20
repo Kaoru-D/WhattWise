@@ -1,42 +1,42 @@
 version,name,applied_at
-1, ¿Cómo puedo reducir el consumo de energía en mi hogar?, Puedes reducir el consumo de energ�a apagando luces y dispositivos cuando no los uses
-2, ¿Qué tipo de bombillas son más eficientes energéticamente?, Las bombillas LED son las m�s eficientes energ�ticamente
-3, �C�mo puedo mejorar la eficiencia energ�tica de mi refrigerador?, Mant�n el refrigerador lleno
-4, �Cu�les son las ventajas de usar paneles solares en casa?, Los paneles solares reducen la dependencia de la red el�ctrica
-5, �Qu� electrodom�sticos consumen m�s energ�a y c�mo puedo reducir su uso?, Los electrodom�sticos como refrigeradores
-6, �Qu� h�bitos diarios pueden ayudarme a ahorrar energ�a?, Apaga las luces al salir de una habitaci�n desenchufa dispositivos no utilizados y usa electrodom�sticos eficientes.
-7, �Qu� tipo de calefacci�n es m�s eficiente energ�ticamente?, Las bombas de calor son generalmente m�s eficientes que las calderas de gas o el�ctricas.
-8, �Qu� beneficios tiene usar un termostato programable?, Un termostato programable ajusta autom�ticamente la temperatura ahorrando energ�a cuando no est�s en casa.
-9, �Qu� consejos hay para ahorrar energ�a en la iluminaci�n del hogar?, Usa bombillas LED aprovecha la luz natural y apaga las luces cuando no las necesites.
-10, �Qu� tipo de electrodom�sticos deber�a considerar para ahorrar energ�a?, Busca electrodom�sticos con la etiqueta Energy Star que son m�s eficientes energ�ticamente.
-11, �Qu� medidas puedo tomar para reducir el consumo de energ�a en invierno?, A�sla tu hogar usa cortinas t�rmicas y ajusta el termostato a una temperatura m�s baja.
-12, �Qu� tipo de ventanas son m�s eficientes energ�ticamente?, Las ventanas de doble o triple acristalamiento con marcos de PVC o madera son m�s eficientes.
-14, �Qu� tipo de ventiladores son m�s eficientes para ahorrar energ�a?, Ventiladores de techo con motores de corriente continua (DC).  Estos consumen hasta un 70% menos de energ�a que los ventiladores tradicionales de corriente alterna (AC)
-15, �Qu� tipo de ventiladores son m�s eficientes para ahorrar energ�a?, Ventiladores con certificaci�n ENERGY STAR: Est�n dise�ados para ser m�s eficientes y consumir menos electricidad.
-16, �Qu� tipo de ventiladores son m�s eficientes para ahorrar energ�a?, Ventiladores de velocidad variable: Permiten ajustar la velocidad seg�n la necesidad lo que reduce el consumo de energ�a.
-17, �Qu� tipo de aislamiento es m�s efectivo para ahorrar energ�a?, Espuma de poliuretano: Tiene un alto valor R (resistencia t�rmica) y es ideal para sellar grietas y espacios peque�os.
-18, �Qu� tipo de aislamiento es m�s efectivo para ahorrar energ�a?, Fibra de vidrio: Es econ�mico y eficaz para aislamiento t�rmico y ac�stico.
-19, �Qu� tipo de aislamiento es m�s efectivo para ahorrar energ�a?, Lana mineral: Resistente al fuego y con buen rendimiento t�rmico.
-20, �Qu� tipo de aislamiento es m�s efectivo para ahorrar energ�a?, Aislamiento reflectivo: Ideal para climas c�lidos ya que refleja el calor en lugar de absorberlo.
-21, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Electrodom�sticos con certificaci�n ENERGY STAR: Estos cumplen con est�ndares de eficiencia energ�tica superiores.
-22, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Lavadoras de carga frontal: Consumen menos agua y energ�a que las de carga superior.
-23, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Refrigeradores con tecnolog�a inverter: Ajustan el consumo de energ�a seg�n la necesidad.
-24, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Termotanques solares: Utilizan energ�a solar para calentar agua
-25, �Qu� tipo de iluminaci�n es m�s eficiente para ahorrar energ�a?, Bombillas LED: Consumen hasta un 80% menos de energ�a que las bombillas incandescentes y duran mucho m�s.
-26, �Qu� tipo de iluminaci�n es m�s eficiente para ahorrar energ�a?, Bombillas CFL (l�mparas fluorescentes compactas): Son m�s eficientes que las incandescentes aunque menos que las LED.
-27, �Qu� tipo de iluminaci�n es m�s eficiente para ahorrar energ�a?, Iluminaci�n inteligente: Sistemas que permiten ajustar la intensidad y el horario de encendido para optimizar el consumo.
-28, �Qu� tipo de cortinas son m�s eficientes para ahorrar energ�a?, Cortinas t�rmicas: Est�n dise�adas con capas aislantes que reducen la transferencia de calor.
-29, �Qu� tipo de cortinas son m�s eficientes para ahorrar energ�a?, Cortinas blackout: Bloquean la luz solar y ayudan a mantener la temperatura interior.
-30, �Qu� tipo de cortinas son m�s eficientes para ahorrar energ�a?, Cortinas con forro reflectivo: Reflejan el calor hacia afuera en verano y lo retienen en invierno.
-31, �Qu� tipo de calefacci�n es m�s eficiente para ahorrar energ�a?, Bombas de calor: Son altamente eficientes ya que transfieren calor en lugar de generarlo.
-32, �Qu� tipo de calefacci�n es m�s eficiente para ahorrar energ�a?, Calderas de condensaci�n: Aprovechan el calor residual de los gases de combusti�n lo que las hace m�s eficientes.
-33, �Qu� tipo de calefacci�n es m�s eficiente para ahorrar energ�a?, Calefacci�n por suelo radiante: Distribuye el calor de manera uniforme y consume menos energ�a que los sistemas tradicionales.
-34, �Qu� tipo de calefacci�n es m�s eficiente para ahorrar energ�a?, Estufas de pellets: Utilizan biomasa renovable y son m�s eficientes que las estufas de le�a tradicionales.
-35, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Lavavajillas con ciclos eco: Utilizan menos agua y energ�a.
-36, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Hornos de convecci�n: Calientan m�s r�pido y de manera m�s uniforme reduciendo el tiempo de cocci�n.
-37, �Qu� tipo de electrodom�sticos son m�s eficientes para ahorrar energ�a?, Aires acondicionados inverter: Ajustan su potencia seg�n la necesidad consumiendo menos energ�a.
-38, �Qu� tipo de bombillas son m�s eficientes para ahorrar energ�a?, Bombillas LED: Son las m�s eficientes con un consumo m�nimo y una vida �til larga.
-39, �Qu� tipo de bombillas son m�s eficientes para ahorrar energ�a?, Bombillas CFL: M�s eficientes que las incandescentes pero menos que las LED.
-40, �Qu� tipo de bombillas son m�s eficientes para ahorrar energ�a?, Bombillas hal�genas eficientes: Consumen menos energ�a que las incandescentes tradicionales aunque no tanto como las LED.
-41, �Qu� me recomiendas?, �Qu� h�bitos diarios pueden ayudarme a ahorrar energ�a
-42, No sé que escribir, �Qu� beneficios tiene usar un termostato programable?
+1,¿Cómo puedo reducir el consumo de energía en mi hogar?,Puedes reducir el consumo de energía apagando luces y dispositivos cuando no los uses
+2,¿Qué tipo de bombillas son más eficientes energéticamente?,Las bombillas LED son las más eficientes energéticamente
+3,¿Cómo puedo mejorar la eficiencia energética de mi refrigerador?,Mantén el refrigerador lleno
+4,¿Cuáles son las ventajas de usar paneles solares en casa?,Los paneles solares reducen la dependencia de la red eléctrica
+5,¿Qué electrodomésticos consumen más energía y cómo puedo reducir su uso?,Los electrodomésticos como refrigeradores
+6,¿Qué hábitos diarios pueden ayudarme a ahorrar energía?,Apaga las luces al salir de una habitación, desenchufa dispositivos no utilizados y usa electrodomésticos eficientes.
+7,¿Qué tipo de calefacción es más eficiente energéticamente?,Las bombas de calor son generalmente más eficientes que las calderas de gas o eléctricas.
+8,¿Qué beneficios tiene usar un termostato programable?,Un termostato programable ajusta automáticamente la temperatura ahorrando energía cuando no estás en casa.
+9,¿Qué consejos hay para ahorrar energía en la iluminación del hogar?,Usa bombillas LED, aprovecha la luz natural y apaga las luces cuando no las necesites.
+10,¿Qué tipo de electrodomésticos debería considerar para ahorrar energía?,Busca electrodomésticos con la etiqueta Energy Star que son más eficientes energéticamente.
+11,¿Qué medidas puedo tomar para reducir el consumo de energía en invierno?,Aísla tu hogar, usa cortinas térmicas y ajusta el termostato a una temperatura más baja.
+12,¿Qué tipo de ventanas son más eficientes energéticamente?,Las ventanas de doble o triple acristalamiento con marcos de PVC o madera son más eficientes.
+14,¿Qué tipo de ventiladores son más eficientes para ahorrar energía?,Ventiladores de techo con motores de corriente continua (DC). Estos consumen hasta un 70% menos de energía que los ventiladores tradicionales de corriente alterna (AC)
+15,¿Qué tipo de ventiladores son más eficientes para ahorrar energía?,Ventiladores con certificación ENERGY STAR: Están diseñados para ser más eficientes y consumir menos electricidad.
+16,¿Qué tipo de ventiladores son más eficientes para ahorrar energía?,Ventiladores de velocidad variable: Permiten ajustar la velocidad según la necesidad, lo que reduce el consumo de energía.
+17,¿Qué tipo de aislamiento es más efectivo para ahorrar energía?,Espuma de poliuretano: Tiene un alto valor R (resistencia térmica) y es ideal para sellar grietas y espacios pequeños.
+18,¿Qué tipo de aislamiento es más efectivo para ahorrar energía?,Fibra de vidrio: Es económico y eficaz para aislamiento térmico y acústico.
+19,¿Qué tipo de aislamiento es más efectivo para ahorrar energía?,Lana mineral: Resistente al fuego y con buen rendimiento térmico.
+20,¿Qué tipo de aislamiento es más efectivo para ahorrar energía?,Aislamiento reflectivo: Ideal para climas cálidos, ya que refleja el calor en lugar de absorberlo.
+21,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Electrodomésticos con certificación ENERGY STAR: Estos cumplen con estándares de eficiencia energética superiores.
+22,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Lavadoras de carga frontal: Consumen menos agua y energía que las de carga superior.
+23,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Refrigeradores con tecnología inverter: Ajustan el consumo de energía según la necesidad.
+24,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Termotanques solares: Utilizan energía solar para calentar agua
+25,¿Qué tipo de iluminación es más eficiente para ahorrar energía?,Bombillas LED: Consumen hasta un 80% menos de energía que las bombillas incandescentes y duran mucho más.
+26,¿Qué tipo de iluminación es más eficiente para ahorrar energía?,Bombillas CFL (lámparas fluorescentes compactas): Son más eficientes que las incandescentes, aunque menos que las LED.
+27,¿Qué tipo de iluminación es más eficiente para ahorrar energía?,Iluminación inteligente: Sistemas que permiten ajustar la intensidad y el horario de encendido para optimizar el consumo.
+28,¿Qué tipo de cortinas son más eficientes para ahorrar energía?,Cortinas térmicas: Están diseñadas con capas aislantes que reducen la transferencia de calor.
+29,¿Qué tipo de cortinas son más eficientes para ahorrar energía?,Cortinas blackout: Bloquean la luz solar y ayudan a mantener la temperatura interior.
+30,¿Qué tipo de cortinas son más eficientes para ahorrar energía?,Cortinas con forro reflectivo: Reflejan el calor hacia afuera en verano y lo retienen en invierno.
+31,¿Qué tipo de calefacción es más eficiente para ahorrar energía?,Bombas de calor: Son altamente eficientes, ya que transfieren calor en lugar de generarlo.
+32,¿Qué tipo de calefacción es más eficiente para ahorrar energía?,Calderas de condensación: Aprovechan el calor residual de los gases de combustión, lo que las hace más eficientes.
+33,¿Qué tipo de calefacción es más eficiente para ahorrar energía?,Calefacción por suelo radiante: Distribuye el calor de manera uniforme y consume menos energía que los sistemas tradicionales.
+34,¿Qué tipo de calefacción es más eficiente para ahorrar energía?,Estufas de pellets: Utilizan biomasa renovable y son más eficientes que las estufas de leña tradicionales.
+35,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Lavavajillas con ciclos eco: Utilizan menos agua y energía.
+36,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Hornos de convección: Calientan más rápido y de manera más uniforme, reduciendo el tiempo de cocción.
+37,¿Qué tipo de electrodomésticos son más eficientes para ahorrar energía?,Aires acondicionados inverter: Ajustan su potencia según la necesidad, consumiendo menos energía.
+38,¿Qué tipo de bombillas son más eficientes para ahorrar energía?,Bombillas LED: Son las más eficientes, con un consumo mínimo y una vida útil larga.
+39,¿Qué tipo de bombillas son más eficientes para ahorrar energía?,Bombillas CFL: Más eficientes que las incandescentes pero menos que las LED.
+40,¿Qué tipo de bombillas son más eficientes para ahorrar energía?,Bombillas halógenas eficientes: Consumen menos energía que las incandescentes tradicionales, aunque no tanto como las LED.
+41,¿Qué me recomiendas?,¿Qué hábitos diarios pueden ayudarme a ahorrar energía
+42,No sé que escribir,¿Qué beneficios tiene usar un termostato programable?
