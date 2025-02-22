@@ -8,7 +8,8 @@
     
     <!-- AdminLTE CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
-    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
@@ -36,12 +37,10 @@
           <!--links Paginas -->
 
 
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="templates/dist/pages/chatbot.html" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CHATBOT</font></font></a>
-          </li>
-          <li class="nav-item d-none d-sm-inline-block">
-            <a href="templates/dist/pages/contacto.html" class="nav-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a>
-          </li>
+          <div class="btn-group">        
+            <a href="templates/dist/pages/chatbot.html" class="btn btn-primary">CHATBOT</a>
+            <a href="/templates/dist/pages/contacto.html" class="btn btn-primary">CONTACTO</a>
+          </div>
         </ul>
     
         <!-- Right navbar links -->
@@ -200,32 +199,31 @@
                 <h1 class="m-0">⚡ Bienvenido a WattWise ⚡ </h1>
             </div>
         </div>
-
         <div class="content">
-            <div class="container-fluid">
-                <div class="card">
-                    <div class="card-header">
-                        <h3 class="card-title">Usuarios</h3>
-                    </div>
-                    <div class="card-body">
-                        <table id="tablaUsuarios" class="table table-bordered-background">
-                          
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Pregunta</th>
-                                    <th>Respuesta</th>
-                                   
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- Aquí se insertarán los datos -->
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
+          <div class="container-fluid">
+              <div class="card">
+                  <div class="card-header bg-primary text-white">
+                      <h3 class="card-title">Usuarios</h3>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table id="tablaUsuarios" class="table table-striped table-hover table-bordered">
+                              <thead class="table-hover thead-dark">
+                                  <tr>
+                                      <th>ID</th>
+                                      <th>Pregunta</th>
+                                      <th>Respuesta</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <!-- Aquí se insertarán los datos dinámicamente -->
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
     </div>
 </div>
