@@ -75,7 +75,7 @@ app=FastAPI(title="WattWise: ChatBot de Ahorro Energético", version="0.0.1")
 
 app.mount("/templates/dist", StaticFiles(directory="templates/dist"), name="static")
 # Configuramos la carpeta de templates
-templates = Jinja2Templates(directory="../WhattWise")
+templates = Jinja2Templates(directory="../WhattWise-master")
 
 # Ruta de inicio que devuelve el archivo HTML
 @app.get("/", tags=["Inicio"])
