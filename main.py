@@ -32,13 +32,12 @@ model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
 def load_questions():
     try:
-        df = pd.read_csv("DataSet/energia.csv", encoding='latin-1')[['version', 'name', 'applied_at']]
+        df = pd.read_csv("DataSet/energia.csv", encoding='utf-8')[['version', 'name', 'applied_at']]
         df.columns = ["id", "pregunta", "respuesta"]
         # Convertir preguntas a embeddings
         preguntas = df['pregunta'].tolist()
         respuestas = df['respuesta'].tolist()
-        embeddings = model.encode(preguntas)
-        """df.fillna('').to_dict(orient='records')"""
+        embeddings = model.encode(preguntas)        
         return {
             "data": df.fillna('').to_dict(orient='records'),
             "preguntas": preguntas,
@@ -56,13 +55,6 @@ preguntas = preguntaDatos["preguntas"]
 respuestas = preguntaDatos["respuestas"]
 embeddings = preguntaDatos["embeddings"]
 
-# Función para buscar respuesta
-"""def responder(pregunta_usuario):
-    embedding_usuario = model.encode([pregunta_usuario])
-    similitudes = cosine_similarity(embedding_usuario, embeddings)
-    indice_max = np.argmax(similitudes)
-    return respuestas[indice_max]
-"""
 
 #función para obtener los sinonimos de una palabra
 def get_synonyms(word):
@@ -107,26 +99,13 @@ def pregunta(id:int):
 
 @app.get('/chatbot', tags=["Chatbot"])
 def chatbot(pregunta_usuario: str):
-    """#Dividimos la pregunta en palabras clave para entender mejor la intención del usuario
-    query_words = word_tokenize(query.lower())
-    
-    #Buscamos sinonimos de las palabras clave para ampliar la busqueda
-    synonyms = {word for q in query_words for word in get_synonyms(q)} | set(query_words)
-    
-    #Filtramos la lista de las preguntas buscando coincidencias con las palabras clave
-    results=[p for p in pregunta_list if any(s in p['pregunta'].lower() for s in synonyms)]
-    
-    #Si hay resultados, los enviamos, sino, mostramos un mensaje de error"""
     if embeddings is None:
         raise HTTPException(status_code=500, detail="❌ No hay preguntas disponibles.")
     embedding_usuario = model.encode([pregunta_usuario])
     similitudes = cosine_similarity(embedding_usuario, embeddings)
     indice_max = np.argmax(similitudes)
     return {"Respuesta":respuestas[indice_max]}
-    """ return JSONResponse(content={
-        "Mensaje": "✅ Aquí tienes algunas preguntas relacionadas:" if results else "⚠️ No te entiendo, puedes preguntarme algo diferente.",
-        "Resultados": results
-    })"""
+    
     
 # Ruta para buscar respuestas por palabra clave
 @app.get("/preguntas/keyword/{keyword}", tags=["Preguntas"])
